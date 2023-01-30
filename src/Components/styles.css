@@ -2,6 +2,11 @@
 body {
     margin: 0;
     font-family: fantasy;
+    background-image: url("../Data/pokeBackground.jpg");
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -14,8 +19,7 @@ body {
 
 
   .navbar--section{
-    border: 1px solid black;
-    height: 70px;
+    height: 15vh;
   }
 
   .navbar {
@@ -26,22 +30,61 @@ body {
 
   .navbar > div {
     display: flex;
-    border: 1px solid red;
     align-items: center;
+    justify-content: center;
   }
 
-  .nav--icon {
-    width: 100px;
+  .navbar > * > img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .nav--icon, .nav--link, .nav--cart {
+    width: 10%;
+    font-size: 20px;
   }
 
   .nav--title {
-    width: 500px;
+    width: 70%;
+    font-size: 25px;
+    font-weight: bold;
   }
 
-  .nav--link {
-    width: 500px;
+  .nav--cart:hover {
+    cursor: pointer;
+  }
+  .nav--title:hover {
+    cursor: pointer;
   }
 
-  .nav--cart {
-    width: 500px;
+  .nav--link:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+
+
+
+  /* -----Home Page ------ */
+
+  .main--home {
+    font-family: "Montserrat SemiBold";
+    padding: 20px;
+    height: 60vh;
+  }
+
+  .main--title {
+    margin: 150px  ;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .main--title > p {
+    padding: 15px;
+    font-size: 22px;
+  }
+
+
+  .nav--link > *, .nav--title > * {
+    color: whitesmoke;
+    text-decoration: none;
   }

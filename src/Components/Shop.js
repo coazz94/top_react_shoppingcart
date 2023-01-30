@@ -1,7 +1,12 @@
 import React from "react"
 
 export const Shop = () => {
+
+    document.body.style = 'background: white;';
+
     return (
-        <h1>Shop</h1>
+        <div style={{ backgroundImage:`none` }}>
+        Hello World
+      </div>
     )
 }
