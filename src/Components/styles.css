@@ -8,9 +8,8 @@ body {
 
 /* Navbar Elements */
 
-.navbar {
+.navbar.navbar-expand-lg {
     display: flex;
     background-color: red;
-    width: 100vw;
-    height: 20vh;
+
 }
