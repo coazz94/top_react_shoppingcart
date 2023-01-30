@@ -1,0 +1,16 @@
+
+body {
+    margin: 0;
+    font-family: fantasy;
+}
+
+
+
+/* Navbar Elements */
+
+.navbar {
+    display: flex;
+    background-color: red;
+    width: 100vw;
+    height: 20vh;
+}
