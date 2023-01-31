@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "../css/Navbar.module.css"
 
-export const Navbar = (props) => {
+export const Navbar = () => {
 
    const [light, setTheme] = useState(false);
 
@@ -18,9 +18,10 @@ export const Navbar = (props) => {
            ? true
            : false
        );
+
+
    }, [location])
 
-   console.log(styles)
 
     return (
          <div className={styles.navbarSection}>
@@ -29,14 +30,18 @@ export const Navbar = (props) => {
                   <img  src={pokeball} alt="not Found" />
                </div>
                <div className={styles.navTitle}>
-                  <Link to="/">Pokemon Shop</Link>
+                  <NavLink
+                     to="/"
+                     style={({ isActive }) =>  {return isActive ? {textDecoration:"underline", color: "white"} : {textDecoration:"none",color: "black"}}}
+                  >Pokemon Shop
+                  </NavLink>
                </div>
                <div className={styles.navLink}>
                   <NavLink
-                     id="test"
                      to="/shop"
-                     style={({ isActive }) => {return isActive ? {textDecoration:"underline"} : {color: "white"}}}
-                     >Shop</NavLink>
+                     style={({ isActive }) =>  {return isActive ? {textDecoration:"underline", color: "black"} : {textDecoration:"none",color: "white"}}}
+                     >Shop
+                     </NavLink>
                </div>
                <div className={styles.navCart}>
                   <Link to="/cart">

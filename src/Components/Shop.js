@@ -1,16 +1,21 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
+import styles from "../css/Shop.module.css"
 
-export const Shop = () => {
+export const Shop = (props) => {
 
-    // useEffect(() => {
-    //   document.body.style = 'background: white;';
-    //   document.querySelector(".navbar").classList.add("whitebg")
-    // }, [])
+    useEffect(() => {
+      // set the background to white
+      document.body.style = 'background: white;';
+    }, [])
 
+    console.log(props.data)
 
     return (
-      <div>
-          Hello World
-      </div>
+      <>
+        <div className={styles.shopSection}>
+
+        </div>
+      </>
+
     )
 }

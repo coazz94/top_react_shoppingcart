@@ -1,14 +1,5 @@
 
-body {
-    margin: 0;
-    font-family: fantasy;
-    background-image: url("../Data/pokeBackground.jpg");
-    color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+    /* background-image: url("../Data/pokeBackground.jpg"); */
 
 
 * {
@@ -21,26 +12,3 @@ body {
 
 
   /* -----Home Page ------ */
-
-  .main--home {
-    font-family: "Montserrat SemiBold";
-    padding: 20px;
-    height: 60vh;
-  }
-
-  .main--title {
-    margin: 150px  ;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .main--title > p {
-    padding: 15px;
-    font-size: 22px;
-  }
-
-
-  .nav--link > *, .nav--title > * {
-    text-decoration: none;
-    color: white;
-  }

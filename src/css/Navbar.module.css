@@ -1,17 +1,16 @@
 
   .navbarSection {
-    height: 15vh;
+    height: 8vh;
   }
 
   .navbar {
     display: flex;
     flex-direction: row;
     height: 100%;
-    color: white;
   }
 
   #light {
-    background-color: rgba(123, 120, 120, 0.1);
+    background-color: rgba(226, 11, 11, 0.3);
   }
 
   .navbar > div {
