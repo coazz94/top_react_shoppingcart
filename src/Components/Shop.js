@@ -1,12 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 export const Shop = () => {
 
-    document.body.style = 'background: white;';
+    // useEffect(() => {
+    //   document.body.style = 'background: white;';
+    //   document.querySelector(".navbar").classList.add("whitebg")
+    // }, [])
+
 
     return (
-        <div style={{ backgroundImage:`none` }}>
-        Hello World
+      <div>
+          Hello World
       </div>
     )
 }

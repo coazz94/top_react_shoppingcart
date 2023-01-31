@@ -10,56 +10,12 @@ body {
 }
 
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', 'Arial', sans-serif;
-  }
-
-
-  .navbar--section{
-    height: 15vh;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-  }
-
-  .navbar > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navbar > * > img {
-    height: 35px;
-    width: 35px;
-  }
-
-  .nav--icon, .nav--link, .nav--cart {
-    width: 10%;
-    font-size: 20px;
-  }
-
-  .nav--title {
-    width: 70%;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  .nav--cart:hover {
-    cursor: pointer;
-  }
-  .nav--title:hover {
-    cursor: pointer;
-  }
-
-  .nav--link:hover {
-    cursor: pointer;
-    color: aqua;
   }
 
 
@@ -85,6 +41,6 @@ body {
 
 
   .nav--link > *, .nav--title > * {
-    color: whitesmoke;
     text-decoration: none;
+    color: white;
   }
