@@ -11,12 +11,7 @@ export function RoutesManager() {
 
     const [pokeData, setPokeData] = useState([])
 
-    async function getPokeData(num) {
-      const res = await fetch (`https://pokeapi.co/api/v2/pokemon/${num}`);
-      const data = await res.json();
-      const url = data.sprites.other["official-artwork"].front_default;
-      setPokeData(prevData => [...prevData, {id: num,  name: data.species.name, picUrl: url}])
-    }
+
 
     useEffect(() => {
       for(let i = 155; i < 170; i ++ ) {
