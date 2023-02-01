@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import background from "../Data/pokeBackground.jpg"
 import styles from "../css/Home.module.css"
 
-export const Home = () => {
+export function Home() {
 
     useEffect(() => {
         // Set Page main Background

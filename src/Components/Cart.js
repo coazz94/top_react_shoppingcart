@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 
-export const Cart = () => {
+export function Cart() {
 
     useEffect(() => {
         document.body.style.backgroundImage = `none`;

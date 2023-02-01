@@ -5,7 +5,7 @@ import "./Components/styles.css"
 import { Navbar } from "./Components/Navbar"
 
 
-export const App = () => {
+export function App() {
 
     return (
         <>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import styles from "../css/Shop.module.css"
 import { Card } from "./Card"
 
-export const Shop = (props) => {
+export function Shop(props) {
 
     useEffect(() => {
       // set the background to white
@@ -16,6 +16,7 @@ export const Shop = (props) => {
           name={pokemon.name}
           url={pokemon.picUrl}
           toggle={()=> print(pokemon.id)}
+          price = {Math.floor(Math.random() * 100)}
         />
       )
     })

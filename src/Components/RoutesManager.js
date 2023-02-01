@@ -3,10 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import { Home } from "./Homepage";
 import { Shop } from "./Shop";
 import { Cart } from "./Cart";
+import { ProductPage } from "./Productpage";
 
 
 
-export const RoutesManager = () => {
+export function RoutesManager() {
 
     const [pokeData, setPokeData] = useState([])
 
@@ -18,9 +19,9 @@ export const RoutesManager = () => {
     }
 
     useEffect(() => {
-      for(let i = 50; i < 60; i ++ ) {
-        const max = Math.floor(Math.random() * 500)
-        getPokeData(max)
+      for(let i = 155; i < 170; i ++ ) {
+        // const max = Math.floor(Math.random() * 500)
+        getPokeData(i)
       }
 
     }, [])
@@ -29,8 +30,16 @@ export const RoutesManager = () => {
     return (
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop data={pokeData} />} />
+                {/* <Route path="/shop" element={<Shop data={pokeData} />} /> */}
+                <Route path="/shop" >
+                    <Route index element={<Shop data={pokeData} />}/>
+                    <Route path=":id" element={<ProductPage />}/>
+                </Route>
+{/*  */}
+
                 <Route path="/cart" element={<Cart />} />
             </Routes>
     )
 }
+
+

@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "../css/Navbar.module.css"
 
-export const Navbar = () => {
+export function Navbar() {
 
    const [light, setTheme] = useState(false);
 
