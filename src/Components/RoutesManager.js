@@ -18,18 +18,18 @@ export const RoutesManager = () => {
     }
 
     useEffect(() => {
-      for(let i = 50; i < 80; i ++ ) {
-        getPokeData(i)
+      for(let i = 50; i < 60; i ++ ) {
+        const max = Math.floor(Math.random() * 500)
+        getPokeData(max)
       }
 
     }, [])
 
 
-
     return (
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop data={pokeData}/>} />
+                <Route path="/shop" element={<Shop data={pokeData} />} />
                 <Route path="/cart" element={<Cart />} />
             </Routes>
     )

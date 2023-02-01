@@ -25,7 +25,7 @@ export const Navbar = () => {
 
     return (
          <div className={styles.navbarSection}>
-            <nav className={styles.navbar} id={light && styles.light }>
+            <nav className={styles.navbar} id={light ? styles.light : undefined }>
                <div className={styles.navIcon}>
                   <img  src={pokeball} alt="not Found" />
                </div>
