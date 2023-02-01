@@ -39,3 +39,8 @@
     font-size: 20px;
 }
 
+.cardLink {
+    text-decoration: none;
+    color: rgb(3, 3, 3);
+}
+

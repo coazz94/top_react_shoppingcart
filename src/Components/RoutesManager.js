@@ -30,10 +30,9 @@ export function RoutesManager() {
     return (
             <Routes>
                 <Route path="/" element={<Home />} />
-                {/* <Route path="/shop" element={<Shop data={pokeData} />} /> */}
                 <Route path="/shop" >
                     <Route index element={<Shop data={pokeData} />}/>
-                    <Route path=":id" element={<ProductPage />}/>
+                    <Route path=":id" element={<ProductPage data={pokeData}/>}/>
                 </Route>
 {/*  */}
 

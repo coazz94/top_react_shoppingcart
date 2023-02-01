@@ -13,6 +13,7 @@ export function Shop(props) {
       return(
         <Card
           key={pokemon.id}
+          id = {pokemon.id}
           name={pokemon.name}
           url={pokemon.picUrl}
           toggle={()=> print(pokemon.id)}
