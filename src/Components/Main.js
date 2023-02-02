@@ -7,9 +7,10 @@ import { ProductPage } from "./Productpage";
 
 
 
-export function RoutesManager() {
+export function Main() {
 
     const [pokeData, setPokeData] = useState([])
+
 
     async function getPokeData(num) {
       const res = await fetch (`https://pokeapi.co/api/v2/pokemon/${num}`);
@@ -20,11 +21,10 @@ export function RoutesManager() {
 
     useEffect(() => {
       for(let i = 155; i < 170; i ++ ) {
-        // const max = Math.floor(Math.random() * 500)
         getPokeData(i)
       }
-
     }, [])
+
 
 
     return (
@@ -32,13 +32,9 @@ export function RoutesManager() {
                 <Route path="/" element={<Home />} />
                 <Route path="/shop" >
                     <Route index element={<Shop data={pokeData} />}/>
-                    <Route path=":id" element={<ProductPage data={pokeData}/>}/>
+                    <Route path=":id" element={<ProductPage data={pokeData}  />}/>
                 </Route>
-{/*  */}
-
                 <Route path="/cart" element={<Cart />} />
             </Routes>
     )
 }
-
-

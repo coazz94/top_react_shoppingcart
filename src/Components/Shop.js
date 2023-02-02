@@ -16,15 +16,10 @@ export function Shop(props) {
           id = {pokemon.id}
           name={pokemon.name}
           url={pokemon.picUrl}
-          toggle={()=> print(pokemon.id)}
           price = {Math.floor(Math.random() * 100)}
         />
       )
     })
-
-    function print(id) {
-      console.log(id)
-    }
 
 
     return (
