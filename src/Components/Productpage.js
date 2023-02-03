@@ -1,5 +1,5 @@
 import React from "react"
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 export function ProductPage({data}) {
     const params = useParams();
@@ -8,5 +8,16 @@ export function ProductPage({data}) {
         return parseInt(params.id) === pokemon.id && pokemon;
     })
 
-    return <h1>ProductPage</h1>
+
+    const location = useLocation()
+
+
+
+
+    return (
+        <>
+            <h1>Test</h1>
+            <p>{location.state.data.name}</p>
+        </>
+    )
 }
