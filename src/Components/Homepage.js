@@ -7,7 +7,6 @@ export function Home() {
     useEffect(() => {
         // Set Page main Background
         document.body.style.backgroundImage = `url("${background}")`;
-        // Change navbar to not white bg
     }, [])
 
     return (

@@ -1,12 +1,17 @@
 import React, { useEffect } from "react"
 
-export function Cart() {
+
+export function Cart({data}) {
 
     useEffect(() => {
         document.body.style.backgroundImage = `none`;
     }, [])
 
+    console.log(data)
+
     return (
-        <h1>Cart</h1>
+        <>
+            Cart
+        </>
     )
 }
