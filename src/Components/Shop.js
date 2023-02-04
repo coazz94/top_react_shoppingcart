@@ -1,11 +1,12 @@
 import React, { useEffect } from "react"
 import styles from "../css/Shop.module.css"
-import { Card } from "./Card"
+import { Card } from "./ProductCard"
 
 
 
 
 export function Shop(props) {
+
     useEffect(() => {
       // set the background to white
       document.body.style.backgroundColor = "white";

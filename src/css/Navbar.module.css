@@ -25,6 +25,7 @@
   }
 
   .navIcon, .navLink, .navCart {
+    position: relative;
     width: 10%;
     font-size: 20px;
   }
@@ -50,4 +51,22 @@
   .cartSymbol {
     height: 35px;
     width: 35px;
+  }
+
+  .navCart{
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .cartCount{
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(225, 225, 233);
+    /* left: 150px; */
+    top: 9px;
+    left: 88px;
   }

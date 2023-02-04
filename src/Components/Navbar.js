@@ -5,7 +5,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styles from "../css/Navbar.module.css"
 
-export function Navbar() {
+export function Navbar({cartElements}) {
 
    const [light, setTheme] = useState(false);
 
@@ -22,6 +22,8 @@ export function Navbar() {
 
    }, [location])
 
+
+   console.log(cartElements)
 
     return (
          <div className={styles.navbarSection}>
@@ -46,9 +48,15 @@ export function Navbar() {
                <div className={styles.navCart}>
                   <Link to="/cart">
                         <img className={styles.cartSymbol} src={cart} alt="not Found" />
+                        {(cartElements !== undefined && cartElements !== 0) &&
+                           <div className={styles.cartCount}>
+                              {cartElements}
+                           </div>
+                           }
+
                   </Link>
                </div>
             </nav>
          </div>
     )
-}
+   }

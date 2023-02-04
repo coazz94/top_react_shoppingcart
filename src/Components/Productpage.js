@@ -8,7 +8,7 @@ export function ProductPage({addToCart}) {
     const location = useLocation()
     const {name, url, price, id}  = location.state.data;
 
-    const [quantity, setQuantity] = useState(0)
+    const [quantity, setQuantity] = useState(1)
 
     useEffect(() => {
         // Set Page main Background

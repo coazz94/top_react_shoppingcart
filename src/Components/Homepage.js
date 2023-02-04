@@ -5,7 +5,6 @@ import styles from "../css/Home.module.css"
 export function Home() {
 
     useEffect(() => {
-        // Set Page main Background
         document.body.style.backgroundImage = `url("${background}")`;
     }, [])
 
