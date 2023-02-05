@@ -3,60 +3,69 @@ import pokeball from "../Data/pokeBall.png"
 import cart from "../Data/shopCart.png"
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import styles from "../css/Navbar.module.css"
+import  styles from "../css/Navbar.module.css"
 
 export function Navbar({cartElements}) {
 
-   const [light, setTheme] = useState(false);
+   const [theme, setTheme] = useState(false);
 
    const location = useLocation()
 
    useEffect(() => {
       setTheme(
-         location.pathname === "/cart" ||
-           location.pathname === "/shop"
+         location.pathname === "/"
            ? true
            : false
        );
-
-
    }, [location])
 
+   const navbarFontColor = {
+      color: theme ? "white" : "black",
+   }
 
-   console.log(cartElements)
+   const navbarBg ={
+      backgroundColor: theme ? "rgba(0, 128, 128, 0.2)" : "rgba(126, 125, 125, 0.2)"
+   }
 
     return (
-         <div className={styles.navbarSection}>
-            <nav className={styles.navbar} id={light ? styles.light : undefined }>
-               <div className={styles.navIcon}>
-                  <img  src={pokeball} alt="not Found" />
-               </div>
-               <div className={styles.navTitle}>
-                  <NavLink
-                     to="/"
-                     style={({ isActive }) =>  {return isActive ? {textDecoration:"underline", color: "white"} : {textDecoration:"none",color: "black"}}}
-                  >Pokemon Shop
-                  </NavLink>
-               </div>
-               <div className={styles.navLink}>
-                  <NavLink
-                     to="/shop"
-                     style={({ isActive }) =>  {return isActive ? {textDecoration:"underline", color: "black"} : {textDecoration:"none",color: "white"}}}
+         <nav className={styles.navbar} style={navbarBg}>
+            <img className={styles.logo} src={pokeball} alt="not Found" />
+            <ul className={styles.navLinks}>
+               <div className={styles.menu}>
+                  <li>
+                     <NavLink
+                        to="/"
+                        style={navbarFontColor}
+                     >Pokemon Shop
+                     </NavLink>
+                  </li>
+                  <li>
+                     <NavLink
+                        to="/shop"
+                        style={navbarFontColor}
                      >Shop
                      </NavLink>
-               </div>
-               <div className={styles.navCart}>
-                  <Link to="/cart">
-                        <img className={styles.cartSymbol} src={cart} alt="not Found" />
-                        {(cartElements !== undefined && cartElements !== 0) &&
-                           <div className={styles.cartCount}>
-                              {cartElements}
-                           </div>
+                  </li>
+                  <li className={styles.services}>
+                     {/* <a href="/">Services</a> */}
+                     <div style={navbarFontColor}>Services</div>
+                     <ul className={styles.dropdown}>
+                        <li><div href="/">under Construction</div></li>
+                        <li><div href="/">under Construction</div></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <Link to="/cart" style={navbarFontColor}>
+                           <img className={styles.cartSymbol} src={cart} alt="not Found" />
+                           {(cartElements !== undefined && cartElements !== 0) &&
+                              <div className={styles.cartCount}>
+                                 {cartElements}
+                              </div>
                            }
-
-                  </Link>
+                     </Link>
+                  </li>
                </div>
-            </nav>
-         </div>
+            </ul>
+         </nav>
     )
    }

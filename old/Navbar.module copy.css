@@ -1,0 +1,71 @@
+
+  .navbarSection {
+    height: 8vh;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #light {
+    background-color: rgba(226, 11, 11, 0.3);
+  }
+
+  .navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar > * > img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .navIcon, .navLink, .navCart {
+    position: relative;
+    width: 10%;
+    font-size: 20px;
+  }
+
+  .navTitle {
+    width: 70%;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .navCart:hover {
+    cursor: pointer;
+  }
+  .navTitle:hover {
+    cursor: pointer;
+  }
+
+  .navLink:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+
+  .cartSymbol {
+    height: 35px;
+    width: 35px;
+  }
+
+  .navCart{
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .cartCount{
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(225, 225, 233);
+    top: 9px;
+    left: 93px;
+  }

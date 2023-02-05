@@ -26,7 +26,8 @@ export function App() {
       setPokeData(prevData => [...prevData, {
           id: num,
           name: data.species.name,
-          picUrl: url
+          picUrl: url,
+          price: (Math.floor(Math.random() * 50) + 50)
       }])
     }
 
@@ -52,6 +53,7 @@ export function App() {
           }
         }
         added[0].quantity = object.quantity;
+        added[0].key = object.id;
         setCartItems(prevData => [...prevData, added[0]]);
     }
 

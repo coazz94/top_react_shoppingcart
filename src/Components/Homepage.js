@@ -9,12 +9,10 @@ export function Home() {
     }, [])
 
     return (
-        <>
-            <section className={styles.mainHome}>
-                <div className={styles.mainTitle}>Buy the Best Pokemon Card Online
-                    <p>Sale Ongoing, safe up to 20%</p>
-                </div>
-            </section>
-        </>
+        <section className={styles.mainHome}>
+            <div className={styles.mainTitle}>Buy the Best Pokemon Card Online
+                <p>Sale Ongoing, safe up to 20%</p>
+            </div>
+        </section>
     )
 }

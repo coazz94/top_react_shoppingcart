@@ -1,16 +1,13 @@
 import React, { useEffect } from "react"
 import styles from "../css/Shop.module.css"
+import background from "../Data/grayBackground.jpg"
 import { Card } from "./ProductCard"
-
-
 
 
 export function Shop(props) {
 
     useEffect(() => {
-      // set the background to white
-      document.body.style.backgroundColor = "white";
-      document.body.style.backgroundImage = null;
+      document.body.style.backgroundImage = `url("${background}")`;
     }, [])
 
     const cardArray = props.data.map(pokemon => {
@@ -20,19 +17,16 @@ export function Shop(props) {
           id = {pokemon.id}
           name={pokemon.name}
           url={pokemon.picUrl}
-          price = {Math.floor(Math.random() * 50) + 50}
+          price = {pokemon.price}
         />
       )
     })
 
-
     return (
-      <>
         <div className={styles.shopSection}>
           <div className={styles.cardSection}>
-                {cardArray}
-            </div>
+              {cardArray}
+          </div>
         </div>
-      </>
     )
 }

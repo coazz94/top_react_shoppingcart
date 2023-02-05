@@ -1,25 +1,19 @@
-
-  .mainHome {
-    font-family: "Montserrat SemiBold";
-    padding: 20px;
-    height: 60vh;
-
-  }
-
-  .mainTitle {
-    margin: 150px  ;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-  }
-
-  .mainTitle > p {
-    padding: 15px;
-    font-size: 22px;
-  }
-
-
-  .navLink > *, .navTitle > * {
-    text-decoration: none;
-    color: white;
-  }
+.mainHome {
+  font-family: "Montserrat SemiBold";
+  padding: 20px;
+  height: 60vh;
+}
+.mainTitle {
+  margin: 150px ;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.mainTitle > p {
+  padding: 15px;
+  font-size: 22px;
+}
+.navLink > *, .navTitle > * {
+  text-decoration: none;
+  color: white;
+}
