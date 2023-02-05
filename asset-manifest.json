@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/shoppingcart/static/css/main.ef2ea062.css",
+    "main.js": "/shoppingcart/static/js/main.9435a5ee.js",
+    "static/media/pokeBackground.jpg": "/shoppingcart/static/media/pokeBackground.ea11c09f74f97bee384b.jpg",
+    "static/media/grayBackground.jpg": "/shoppingcart/static/media/grayBackground.528bc3581cfda097b0db.jpg",
+    "static/media/pokeBall.png": "/shoppingcart/static/media/pokeBall.daf16cf65ed3cf96f6f1.png",
+    "static/media/productBg.jpg": "/shoppingcart/static/media/productBg.1292faa7e7501d45adce.jpg",
+    "static/media/shopCart.png": "/shoppingcart/static/media/shopCart.f05ac72fe0f17da291d9.png",
+    "index.html": "/shoppingcart/index.html",
+    "main.ef2ea062.css.map": "/shoppingcart/static/css/main.ef2ea062.css.map",
+    "main.9435a5ee.js.map": "/shoppingcart/static/js/main.9435a5ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef2ea062.css",
+    "static/js/main.9435a5ee.js"
+  ]
+}
